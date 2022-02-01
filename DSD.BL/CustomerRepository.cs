@@ -8,6 +8,13 @@ namespace DSD.BL
 {
     public class CustomerRepository
     {
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();
+        }
+        private AddressRepository addressRepository { get; set; }
+
+
         /// <summary>
         /// Retrieve one customer.
         /// </summary>
@@ -23,9 +30,11 @@ namespace DSD.BL
             /// a populated customer
             if (customerId == 1)
             {
-                customer.EmailAddress = "EverSong@gmail.com";
+                customer.EmailAddress = "eversong@gmail.com";
                 customer.FirstName = "EverSong";
                 customer.LastName = "Berry";
+                customer.AddressList = addressRepository.RetrieveByCustomerId(customerId).
+                    ToList();
             }
             return customer;
         }
@@ -35,9 +44,28 @@ namespace DSD.BL
         /// <returns></returns>
         public bool Save(Customer customer)
         {
-            ///Code that saves the passed in customerk
+            var success = true;
 
-            return true;
+            if (customer.HasChanges)
+            {
+                if (customer.IsValid)
+                {
+                    if (customer.IsNew)
+                    {
+                        // Call an Insert Stored Procedure
+
+                    }
+                    else
+                    {
+                        // Call an Update Stored Procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
     }
 }

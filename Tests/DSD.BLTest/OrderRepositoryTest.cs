@@ -15,7 +15,7 @@ namespace DSD.BLTest
             var expected = new Order(10)
             {
                 OrderDate = new DateTimeOffset
-                    (DateTime.Now.Year, 4, 14, 10, 00, 00, new TimeSpan(7, 0, 0)),
+                    (DateTime.Now.Year, 4, 14, 10, 22, 22, new TimeSpan(7, 0, 0)),
         };
 
          //-- Act

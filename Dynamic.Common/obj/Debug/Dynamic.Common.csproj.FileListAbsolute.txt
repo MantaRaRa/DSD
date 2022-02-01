@@ -1,0 +1,6 @@
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Dynamic.Common\bin\Debug\Dynamic.Common.dll
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Dynamic.Common\bin\Debug\Dynamic.Common.pdb
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Dynamic.Common\obj\Debug\Dynamic.Common.csproj.AssemblyReference.cache
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Dynamic.Common\obj\Debug\Dynamic.Common.csproj.CoreCompileInputs.cache
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Dynamic.Common\obj\Debug\Dynamic.Common.dll
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Dynamic.Common\obj\Debug\Dynamic.Common.pdb
