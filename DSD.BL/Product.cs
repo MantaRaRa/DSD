@@ -2,7 +2,7 @@
 
 namespace DSD.BL
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public Product() 
         {
@@ -22,9 +22,7 @@ namespace DSD.BL
         {
             get
             {
-                var stringHandler = new StringHandler();
-
-                return stringHandler.InsertSpaces(_productName);
+                return _productName.InsertSpaces();
             }
             set
             {
@@ -32,6 +30,8 @@ namespace DSD.BL
             }
         }
 
+        public string Log() =>
+            $"{ProductId}: {ProductName} {ProductDescription} Status: {EntityState.ToString()}";
         public override string ToString() => ProductName;
         
         /// <summary>

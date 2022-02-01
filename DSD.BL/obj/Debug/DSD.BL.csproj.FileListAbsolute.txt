@@ -4,3 +4,6 @@ C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\obj\Debug\DSD.BL.csproj.Assem
 C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\obj\Debug\DSD.BL.csproj.CoreCompileInputs.cache
 C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\obj\Debug\DSD.BL.dll
 C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\obj\Debug\DSD.BL.pdb
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\bin\Debug\Dynamic.Common.dll
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\bin\Debug\Dynamic.Common.pdb
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\DSD.BL\obj\Debug\DSD.BL.csproj.CopyComplete

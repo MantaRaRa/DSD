@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Dynamic.Common
 {
-    public class StringHandler
+    public static class StringHandler
     {
-        public string InsertSpaces(string source)
+    /// <summary>
+    /// Insert spaces before each capital letter in a string
+    /// </summary>
+    /// <param name="source"></param>
+    /// <returns></returns>
+        public static string InsertSpaces(this string source)
         {
             string result = string.Empty;
 

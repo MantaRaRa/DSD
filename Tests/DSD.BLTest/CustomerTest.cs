@@ -10,7 +10,7 @@ namespace DSD.BLTest
         [TestMethod]
         public void FullNameTestValid()
         {
-            //--Arrange
+            //-- Arrange
             Customer customer = new Customer
             {
                 FirstName = "EverSong",
@@ -18,106 +18,106 @@ namespace DSD.BLTest
             };
             string expected = "Berry, EverSong";
 
-
-            //--Act
+            //-- Act
             string actual = customer.FullName;
-            //--Assert
+
+            //-- Assert
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod]
         public void FullNameFirstNameEmpty()
         {
-            //--Arrange
+            //-- Arrange
             Customer customer = new Customer
             {
-           
                 LastName = "Berry"
             };
             string expected = "Berry";
 
-
-            //--Act
+            //-- Act
             string actual = customer.FullName;
-            //--Assert
+
+            //-- Assert
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod]
         public void FullNameLastNameEmpty()
         {
-            //--Arrange
+            //-- Arrange
             Customer customer = new Customer
             {
-                FirstName = "EverSong",
-               
+                FirstName = "EverSong"
             };
             string expected = "EverSong";
 
-
-            //--Act
+            //-- Act
             string actual = customer.FullName;
-            //--Assert
+
+            //-- Assert
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void StaticTest()
         {
-            //--Arrange
+            //-- Arrange
             var c1 = new Customer();
             c1.FirstName = "EverSong";
             Customer.InstanceCount += 1;
 
             var c2 = new Customer();
-            c2.FirstName = "EverLeigh";
+            c2.FirstName = "Everleigh";
             Customer.InstanceCount += 1;
 
             var c3 = new Customer();
             c3.FirstName = "Evenge";
             Customer.InstanceCount += 1;
 
-            //--Act
-           
-            //--Assert
+            //-- Act
+
+            //-- Assert
             Assert.AreEqual(3, Customer.InstanceCount);
         }
+
         [TestMethod]
         public void ValidateValid()
         {
-            //--Arrange
+            //-- Arrange
             var customer = new Customer
             {
-                LastName = "VanMany",
-                EmailAddress = "vanmanyk@gmail.com"
+                LastName = "Berry",
+                EmailAddress = "berry@gmail.com"
             };
 
             var expected = true;
 
-            //--Act
+            //-- Act
             var actual = customer.Validate();
 
-            //--Assert
+            //-- Assert
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void ValidateMissingLastName()
         {
-            //--Arrange
+            //-- Arrange
             var customer = new Customer
             {
-                EmailAddress = "vanmany@gmail.com"
+                EmailAddress = "berry@gmail.com"
             };
 
             var expected = false;
 
-            //--Act
-
+            //-- Act
             var actual = customer.Validate();
 
-            //--Assert
-            Assert.AreEqual(3, Customer.InstanceCount);
+            //-- Assert
+            Assert.AreEqual(expected, actual);
         }
+
     }
-
-
 }
+

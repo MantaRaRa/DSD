@@ -13,10 +13,10 @@ namespace Dynamic.CommonTest
             //Arrange
             var source = "DynamicSelfDefense";
             var expected = "Dynamic Self Defense";
-            var handler = new StringHandler();
+            
 
             // Act
-            var actual = handler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -27,10 +27,9 @@ namespace Dynamic.CommonTest
             //Arrange
             var source = "Dynamic Self Defense";
             var expected = "Dynamic Self Defense";
-            var handler = new StringHandler();
-
+            
             // Act
-            var actual = handler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
 
             //Assert
             Assert.AreEqual(expected, actual);

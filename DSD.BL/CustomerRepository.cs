@@ -24,8 +24,7 @@ namespace DSD.BL
             /// pass in the requested id
             Customer customer = new Customer(customerId);
 
-            /// Code the retrieves the defined customer
-            
+            /// Code that retrieves the defined customer
             /// Temporary hard-coded values to return
             /// a populated customer
             if (customerId == 1)

@@ -15,3 +15,5 @@ C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Tests\DSD.BLTest\obj\Debug\DSD.BLTes
 C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Tests\DSD.BLTest\obj\Debug\DSD.BLTest.csproj.CopyComplete
 C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Tests\DSD.BLTest\obj\Debug\DSD.BLTest.dll
 C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Tests\DSD.BLTest\obj\Debug\DSD.BLTest.pdb
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Tests\DSD.BLTest\bin\Debug\Dynamic.Common.dll
+C:\Users\vvanmany\Desktop\Repos\Code KY\DSD\Tests\DSD.BLTest\bin\Debug\Dynamic.Common.pdb

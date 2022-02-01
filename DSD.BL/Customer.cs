@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dynamic.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DSD.BL
 {
-    public class Customer : EntityBase
+    public class Customer : EntityBase, ILoggable
     {
         public Customer(): this(0)
         {
@@ -50,6 +51,8 @@ namespace DSD.BL
             set { _lastName = value; }
         }
 
+        public string Log() =>
+            $"{CustomerId}: {FullName} {EmailAddress} Status: {EntityState.ToString()}";
         public override string ToString() => FullName;
 
         /// <summary>
